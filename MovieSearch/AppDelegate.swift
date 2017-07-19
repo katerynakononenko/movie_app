@@ -2,21 +2,26 @@
 //  AppDelegate.swift
 //  MovieSearch
 //
-//  Created by Akinsete Sunday on 2/19/17.
+//  Created by Kateryna Kononenko on 2/19/17.
 //  Copyright © 2017 movie. All rights reserved.
 //
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    
+    
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        IQKeyboardManager.sharedManager().enable = true
         return true
     }
 
